@@ -8,7 +8,7 @@ hash.set("suma", arr => {
         res += ele;
     });
     return res;
-})
+});
 
 hash.set("resta", arr => {
     let res;
@@ -20,7 +20,7 @@ hash.set("resta", arr => {
         else throw Error("Debes ingresar un arreglo de números como parámetro.");
     });
     return res;
-})
+});
 
 hash.set("multiplicacion", arr => {
     let res = 1;
@@ -35,7 +35,7 @@ hash.set("multiplicacion", arr => {
 hash.set("division", (a, b) => {
     if (typeof a === "number" && typeof b === "number"){
         if (b === 0)
-            throw Error("No se puede dividir entre 0.")
+            throw Error("No se puede dividir entre 0.");
         return a / b;
     }
     throw Error("Los parámetros deben ser números.");
@@ -47,12 +47,12 @@ try {
 
     // Estos parámetros son sólo para la división
     let par_1 = 1 // Ingresar parámetro deseado
-    let par_2 = 0 // Ingresar parámetro deseado
+    let par_2 = 1 // Ingresar parámetro deseado
 
     // Función deseada
-    let funcion = "division" // Ingresar nombre de la función entre comillas
+    let funcion = "suma" // Ingresar nombre de la función entre comillas
 
-    
+
     if (funcion === "division")
         console.log(hash.get(funcion)(par_1, par_2));
     else
