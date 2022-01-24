@@ -43,14 +43,14 @@ hash.set("division", (a, b) => {
 
 try {
     // Parámetro para suma, resta y multiplicación
-    let par = [1, 2, 3, 4] // Ingresar parámetro deseado
+    let par = [1, 2, 3, 4]; // Ingresar parámetro deseado
 
     // Estos parámetros son sólo para la división
-    let par_1 = 1 // Ingresar parámetro deseado
-    let par_2 = 1 // Ingresar parámetro deseado
+    let par_1 = 1; // Ingresar parámetro deseado
+    let par_2 = 1; // Ingresar parámetro deseado
 
     // Función deseada
-    let funcion = "suma" // Ingresar nombre de la función entre comillas
+    let funcion = "suma"; // Ingresar nombre de la función entre comillas
 
 
     if (funcion === "division")
